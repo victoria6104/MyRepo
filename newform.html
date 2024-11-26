@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Server-Side Processing</title>
+</head>
+<body>
+    <form action="http://webdevfoundations.net/scripts/mydemo.asp" method="post">
+        <!-- Hidden Input Field -->
+        <input type="hidden" name="userid" value="12345">
+
+        <label for="username">Enter your username:</label>
+        <input type="text" id="username" name="username" maxlength="30" placeholder="Username"><br><br>
+
+        <!-- Password Input Field -->
+        <label for="pword">Enter your password:</label>
+        <input type="password" id="pword" name="pword" placeholder="Password"><br><br>
+
+        <p>Vote for your favorite day of the week:</p>
+        
+        <input type="radio" id="monday" name="favorite_day" value="Monday">
+        <label for="monday">Monday</label><br>
+
+        <input type="radio" id="tuesday" name="favorite_day" value="Tuesday">
+        <label for="tuesday">Tuesday</label><br>
+
+        <input type="radio" id="wednesday" name="favorite_day" value="Wednesday">
+        <label for="wednesday">Wednesday</label><br>
+
+        <input type="radio" id="thursday" name="favorite_day" value="Thursday">
+        <label for="thursday">Thursday</label><br>
+
+        <input type="radio" id="friday" name="favorite_day" value="Friday">
+        <label for="friday">Friday</label><br>
+
+        <input type="radio" id="saturday" name="favorite_day" value="Saturday">
+        <label for="saturday">Saturday</label><br>
+
+        <input type="radio" id="sunday" name="favorite_day" value="Sunday">
+        <label for="sunday">Sunday</label><br><br>
+
+        <label for="social">Select your favorite social networking site:</label>
+        <select id="social" name="favorite_social">
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Twitter">Twitter</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Snapchat">Snapchat</option>
+            <option value="TikTok">TikTok</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Shipping Address</legend>
+            <label for="addressline1">Address Line 1:</label>
+            <input type="text" id="addressline1" name="addressline1" placeholder="123 Main St"><br><br>
+
+            <label for="addressline2">Address Line 2:</label>
+            <input type="text" id="addressline2" name="addressline2" placeholder="Apt, Suite, etc. (optional)"><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="City"><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="State"><br><br>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="Zip Code"><br><br>
+        </fieldset>
+
+        <!-- Image Button -->
+        <input type="image" src="signup.gif" alt="Sign Up" width="130" height="50">
+    </form>
+</body>
+</html>
